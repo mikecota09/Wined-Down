@@ -41,11 +41,6 @@ const Register = () => {
         <NavHomepage />
       </Container>
 
-      <Breadcrumb className="show-drink-breadcrumb">
-        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-        <Breadcrumb.Item active>Register</Breadcrumb.Item>
-      </Breadcrumb>
-
       <Container className="login-register-outer-box">
         <h2>Register</h2>
         <Form onSubmit={handleSubmit}>
