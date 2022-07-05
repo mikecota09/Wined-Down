@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 // Define the cart schema
-const shoppedDrinkSchema = new mongoose.Schema({
+const shoppedwineSchema = new mongoose.Schema({
   drinkId: { type: String, required: true, unique: true },
   quantity: { type: Number, required: true },
   price: { type: Number, required: true },
@@ -10,4 +10,4 @@ const shoppedDrinkSchema = new mongoose.Schema({
 })
 
 // define model
-export default mongoose.model('ShoppedDrink', shoppedDrinkSchema)
+export default mongoose.model('ShoppedDrink', shoppedwineSchema)
