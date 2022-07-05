@@ -1,7 +1,7 @@
 import Wine from '../models/wine.js'
 
 // get all wines
-export const getAllWines = async (_req, res) => {
+export const getAllWines = async (req, res) => {
     const wines = await Wine.find()
     return res.status(200).json(wines)
 }
@@ -28,7 +28,7 @@ export const displayWine =  async (req, res) => {
         return res.status(200).json(oneWine)
     } catch (err) {
         console.log(err)
-        return res.status(404).json({ 'message': 'Wine not exist' })
+        return res.status(404).json({ 'message': 'Wine not found' })
     }
 }
 
