@@ -1,5 +1,6 @@
 import express from 'express'
 import { getAllWines, createWine, displayWine, editWine, deleteWine } from '../controllers/wine.js'
+import { getAllUsers, getUser, createUser, deleteUser, editUser } from '../controllers/users.js'
 const router = express.Router()
 
 router.route('/wines')
@@ -11,5 +12,13 @@ router.route('/wines/:id')
     .put(editWine)
     .delete(deleteWine)
 
+router.route('/users')
+    .get(getAllUsers)
+    .post(createUser)
+
+router.route('/users/:id')
+    .get(getUser)
+    .put(editUser)
+    .delete(deleteUser)
 
 export default router
