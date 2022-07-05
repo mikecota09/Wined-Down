@@ -1,9 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
-import { databaseURI, port } from "../config/environment.js";
-import router from "../config/router.js";
+import { databaseURI, port } from "./config/environment.js";
+import router from "./config/router.js";
+import path from "path";
 
 const app = express();
+const __dirname = path.resolve();
 
 // setup the server
 const startServer = async () => {
@@ -15,7 +17,7 @@ const startServer = async () => {
     });
     console.log("🚀 DB connects successfully");
 
-    // logger
+    // log
     app.use((req, _res, next) => {
       console.log(`Incoming request: METHOD: ${req.method}, URL: ${req.url}`);
       next();

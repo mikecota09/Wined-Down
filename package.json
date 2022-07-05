@@ -1,47 +1,26 @@
 {
-  "name": "wine",
-  "version": "0.1.0",
-  "private": true,
+  "name": "project-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mikecota09/Project-3.git",
+  "author": "",
+  "license": "",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.1.3",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.4.1",
-    "passport": "^0.6.0",
-    "passport-github2": "^0.1.12",
-    "passport-jwt": "^4.0.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.4.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "mongoose": "^5.13.0",
+    "react-bootstrap": "^1.6.1",
+    "react-icons": "^4.2.0",
+    "react-map-gl": "^6.1.16"
   },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "seed": "node db/seeds.js",
+    "dev": "npx nodemon",
+    "start": "node index.js",
+    "build": "cd client && yarn && yarn build"
   }
 }
