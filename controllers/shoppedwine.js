@@ -1,62 +1,63 @@
+import ShoppedWine from '../models/shoppedWine.js'
 import Wine from "../models/wine.js";
 
-// get all wines
-export const getAllWines = async (_req, res) => {
-  const wines = await Wine.find();
-  return res.status(200).json(wines);
-};
+// display all wines - index
+export const getAllShoppedWines = async (req, res) => {
+  const wines = await ShoppedWine.find()
+  const allWines = await Wine.find()
 
-// create a wine
-export const createWine = async (req, res) => {
-  try {
-    const wineToBeAdded = await Wine.create(req.body);
-    console.log("WINE TO ADD", wineToBeAdded);
-    return res.status(201).json(wineToBeAdded);
-  } catch (err) {
-    console.log(err);
-    return res.status(422).json(err);
-  }
-};
+  const getAll = wines.map(wine => {
+    const filtered = allWines.filter(wn => {
+      return wn.id === wine.wineId
+    })
+    if (filtered.length > 0) {
+      filtered.push(wine)
+      return filtered
+    }
+  })
+  return res.status(200).json(getAll)
+}
 
-// get one wine
-export const displayWine = async (req, res) => {
+// get one wine - wine route
+export const displayShoppedWine = async (req, res) => {
   try {
-    const { id } = req.params;
-    const oneWine = await Wine.findById(id);
-    if (!oneWine) throw new Error();
-    console.log("single wine", oneWine);
-    return res.status(200).json(oneWine);
+    const { id } = req.params
+    const singleWine = await ShoppedWine.findById(id).populate('owner')
+    if (!singleWine) throw new Error()
+    console.log('single wine', singleWine)
+    return res.status(200).json(singleWine)
   } catch (err) {
-    console.log(err);
-    return res.status(404).json({ message: "Wine not exist" });
+    console.log(err)
+    return res.status(404).json({ 'message': 'An error occurs while getting a wine' })
   }
-};
+}
 
-// remove a wine
-export const deleteWine = async (req, res) => {
-  const { id } = req.params;
+// add a wine to cart 
+export const postShoppedWine = async (req, res) => {
   try {
-    await Wine.findByIdAndDelete({ _id: id });
-    return res.sendStatus(204);
+    const { id } = req.params
+    const wine = await Wine.findById(id)
+    if (!wine) throw new Error('No wine found')
+    const wineToBeAdded = { ...req.body }
+    const shoppedWine = await ShoppedWine.create(wineToBeAdded)
+    console.log(shoppedWine)
+    return res.status(200).json(shoppedWine)
   } catch (err) {
-    console.log(err);
-    return res.status(404).json({ message: "Wine not exist" });
+    console.log(err) 
+    return res.status(404).json({ message: err.message })
   }
-};
+}
 
-// edit a wine
-export const editWine = async (req, res) => {
-  const { id } = req.params;
+// delete a shopped wine
+export const deleteShoppedWine =  async (req, res) => {
   try {
-    const wineToBeUpdated = await Wine.findOneAndUpdate(
-      { _id: id },
-      { ...req.body },
-      { new: true }
-    );
-    if (!wineToBeUpdated) throw new Error();
-    return res.status(200).json(wineToBeUpdated);
+    const { id } = req.params
+    const wineToBeDeleted = await ShoppedWine.findById(id)
+    if (!wineToBeDeleted) throw new Error()
+    await wineToBeDeleted.remove()
+    return res.status(200).json('success')
   } catch (err) {
-    console.log(err);
-    return res.status(404).json({ message: "Wine not exist" });
+    console.log(err)
+    return res.status(404).json({ 'message': 'An error occurs while deleting a wine' })
   }
-};
+}
