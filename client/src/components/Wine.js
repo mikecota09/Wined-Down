@@ -73,13 +73,13 @@ const WineShow = () => {
       <Container className="show-drink" fluid>
         <div className="image-text">
           {/* <div className="image"> */}
-          <img alt={drink.drink} src={drink.image} />
+          <img alt={wine.wine} src={wine.image} />
           {/* </div> */}
           <div className="right">
             <Container className="title" style={{ width: "100" }}>
-              <h2>{drink.drink}</h2>
+              <h2>{wine.wine}</h2>
               <h4 className="origin">
-                Origin: <span className="country-name">{drink.country}</span>
+                Origin: <span className="country-name">{wine.country}</span>
               </h4>
             </Container>
             <Container className="content" style={{ width: "100" }}>
@@ -89,11 +89,11 @@ const WineShow = () => {
                 <div className="p-container">
                   <p className="averageRating">
                     <span>Average rating: </span>
-                    {drink.avgRating}
+                    {wine.avgRating}
                   </p>
                   <p className="averageRating">
                     <span>Price: $</span>
-                    {drink.price}
+                    {wine.price}
                   </p>
                   <p className="averageRating">
                     <span>Quantity: </span>
