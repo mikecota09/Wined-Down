@@ -58,4 +58,66 @@ const WineShow = () => {
       console.log(err);
     }
   };
+  return (
+    <>
+      <Container fluid sticky="top" className="nav-container-pages">
+        <NavHomepage />
+      </Container>
+
+      <Breadcrumb className="show-wine-breadcrumb">
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/wine">Browse Wine</Breadcrumb.Item>
+        <Breadcrumb.Item active>{wine.wine}</Breadcrumb.Item>
+      </Breadcrumb>
+
+      <Container className="show-drink" fluid>
+        <div className="image-text">
+          {/* <div className="image"> */}
+          <img alt={drink.drink} src={drink.image} />
+          {/* </div> */}
+          <div className="right">
+            <Container className="title" style={{ width: "100" }}>
+              <h2>{drink.drink}</h2>
+              <h4 className="origin">
+                Origin: <span className="country-name">{drink.country}</span>
+              </h4>
+            </Container>
+            <Container className="content" style={{ width: "100" }}>
+              <h4>Description</h4>
+              <p className="description">{wine.description}</p>
+              <div className="info-container">
+                <div className="p-container">
+                  <p className="averageRating">
+                    <span>Average rating: </span>
+                    {drink.avgRating}
+                  </p>
+                  <p className="averageRating">
+                    <span>Price: $</span>
+                    {drink.price}
+                  </p>
+                  <p className="averageRating">
+                    <span>Quantity: </span>
+                    <input
+                      name="quantity"
+                      value={quantity}
+                      onChange={handleChange}
+                    ></input>
+                  </p>
+                </div>
+                <Container className="buttons" fluid>
+                  <Button variant="outline-warning" onClick={handleCart}>
+                    Add to cart
+                  </Button>{" "}
+                </Container>
+              </div>
+            </Container>
+          </div>
+        </div>
+      </Container>
+
+      <Footer />
+    </>
+  );
 };
+
+export default WineShow;
