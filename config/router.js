@@ -1,15 +1,14 @@
 import express from "express";
 import {
-  getAllWines,
-  createWine,
-  displayWine,
-  editWine,
-  deleteWine,
+  getAllShoppedWines,
+  postShoppedWine,
+  displayShoppedWine,
+  deleteShoppedWine,
 } from "../controllers/shoppedWine.js";
 const router = express.Router();
 
-router.route("/shoppedWine").get(getAllWines).post(createWine);
+router.route("/shopped-wines").get(getAllShoppedWines);
 
-router.route("/wines/:id").get(displayWine).put(editWine).delete(deleteWine);
+router.route("/shopped-wines/:id").get(displayShoppedWine).delete(deleteShoppedWine).post(postShoppedWine);
 
 export default router;
