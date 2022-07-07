@@ -10,4 +10,4 @@ const shoppedWineSchema = new mongoose.Schema({
 })
 
 // define model
-export default mongoose.model('ShoppedWine', shoppedwineSchema)
+export default mongoose.model('ShoppedWine', shoppedWineSchema)
