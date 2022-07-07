@@ -20,7 +20,7 @@
   "scripts": {
     "seed": "node db/seeds.js",
     "dev": "npx nodemon",
-    "start": "node index.js",
+    "start": "node server.js",
     "build": "cd client && yarn && yarn build"
   }
 }
