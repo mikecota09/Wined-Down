@@ -42,7 +42,7 @@ const seedDatabase = async () => {
 
     // create shoppedWines
     const shoppedWines = await ShoppedWine.create(shoppedWinesWithData)
-    console.log(`🌱 DB seeded with ${shoppedWines.length} wines`)
+    // console.log(`🌱 DB seeded with ${shoppedWines.length} wines`)
 
     
     

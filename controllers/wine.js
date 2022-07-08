@@ -1,4 +1,4 @@
-import Wine from '../models/wine';
+import Wine from '../models/wine.js';
 
 // get all wines
 export const getAllWines = async (req, res) => {
