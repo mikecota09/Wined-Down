@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { dbURI } from '../config/environment.js'
+import { databaseURI } from '../config/environment.js'
 import Wine from '../models/wine.js'
 import wineData from './data/Wines.js'
 import User from '../models/User.js'
@@ -14,7 +14,7 @@ import shoppedWineData from './data/ShoppedWine.js'
 const seedDatabase = async () => {
   try {
     // connect to db 
-    await mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+    await mongoose.connect(databaseURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
     console.log('🚀 DB connected in seeds')
 
     // drop the db
