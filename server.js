@@ -29,13 +29,13 @@ const startServer = async () => {
 
     app.use("/api", router);
 
-    app.get("*", function (req, res) {
-      res.sendFile("index.html");
-    });
+    //app.get("*", function (req, res) {
+    //res.sendFile(`${__dirname}/client/build/index.html`);
+    //});
 
-    //    app.use("/*", (_, res) =>
-    //      res.sendFile(`${__dirname}/client/build/index.html`)
-    //    );
+    app.use("/*", (_, res) =>
+      res.sendFile(`${__dirname}/client/build/index.html`)
+    );
 
     app.listen(port, () =>
       console.log(`Express is up and running on port ${port}`)
