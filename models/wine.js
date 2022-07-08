@@ -14,7 +14,7 @@ const wineSchema = new mongoose.Schema({
 wineSchema.virtual('avgRating')
   .get(function() { 
     //get all the ratings
-    if (!this.comments.length) return 'Not rated yet'
+    if (!this.comments) return 'Not rated yet'
     // define variable to map throug ratings
     const sum = this.comments.reduce((acc, curr) => {
       return acc + curr.rating
