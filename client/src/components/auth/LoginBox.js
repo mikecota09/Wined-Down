@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/esm/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const LoginBox = ({ path }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [error, setError] = useState(false);
   const [formData, setFormData] = useState({
@@ -35,7 +35,7 @@ const LoginBox = ({ path }) => {
     try {
       const { data } = await axios.post("/api/login", formData);
       setTokenToLocalStorage(data.token);
-      history.push(path);
+      navigate.push(path);
     } catch (err) {
       setError(true);
     }

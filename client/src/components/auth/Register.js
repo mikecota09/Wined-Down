@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import NavHomepage from "../common/NavHomepage";
+import axios from "axios";
+import { useNavigate, Link } from "react-router-dom";
+import { ImageUploadField } from "../helpers/ImageUploadField";
+import Footer from "../common/Footer";
+//import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 const Register = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     username: "",
@@ -17,11 +26,21 @@ const Register = () => {
     passwordConfirmation: "",
   });
 
+  const handleChange = (event) => {
+    const newFormData = {
+      ...formData,
+      [event.target.name]: event.target.value,
+    };
+    const newErrors = { ...errors, [event.target.name]: "" };
+    setFormData(newFormData);
+    setErrors(newErrors);
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       await axios.post("/api/register", formData);
-      history.push("/login");
+      navigate.push("/login");
     } catch (err) {
       console.log("error response", err.response.data.errors);
       console.log("err.response", err.response);

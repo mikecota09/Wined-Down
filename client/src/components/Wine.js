@@ -5,7 +5,7 @@ import NavHomepage from "./common/NavHomepage";
 import Container from "react-bootstrap/Container";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Button from "react-bootstrap/Button";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Footer from "./common/Footer";
 
 const WineShow = () => {
@@ -13,7 +13,7 @@ const WineShow = () => {
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getData = async () => {
@@ -53,7 +53,7 @@ const WineShow = () => {
         //   headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` },
         // }
       );
-      history.push("/shop-wine");
+      navigate.push("/shop-wine");
     } catch (err) {
       console.log(err);
     }

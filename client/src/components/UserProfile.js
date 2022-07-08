@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavHomepage from "./common/NavHomepage.js";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Container from "react-bootstrap/esm/Container";
@@ -11,10 +11,10 @@ import Row from "react-bootstrap/Row";
 import Footer from "./common/Footer.js";
 
 const UserProfile = () => {
-  const [userInfo, setUserInfo] = useState([]);
+  const [userInfo] = useState([]);
   const [profileInfo, setProfileInfo] = useState([]);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   //  useEffect(() => {
   //    const getData = async () => {
@@ -47,7 +47,7 @@ const UserProfile = () => {
   // Logout
   const handleLogout = () => {
     window.localStorage.removeItem("token");
-    history.push("/");
+    navigate.push("/");
   };
 
   return (
