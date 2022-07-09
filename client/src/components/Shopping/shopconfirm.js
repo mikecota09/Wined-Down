@@ -14,9 +14,9 @@ const Shopconfirm = () => {
         <p>Thank You For Shopping With Us, Your Order Is On Its Way</p>
       </h2>
 
-      <Breadcrumb className="show-drink-breadcrumb">
+      <Breadcrumb className="show-wine-breadcrumb">
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/drinks">Browse Wine</Breadcrumb.Item>
+        <Breadcrumb.Item href="/wines">Browse Wine</Breadcrumb.Item>
       </Breadcrumb>
     </div>
   );

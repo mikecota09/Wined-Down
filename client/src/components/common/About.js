@@ -12,7 +12,7 @@ const About = () => {
         <NavHomepage />
       </Container>
 
-      <Breadcrumb className="show-drink-breadcrumb">
+      <Breadcrumb className="show-wine-breadcrumb">
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
         <Breadcrumb.Item active>About</Breadcrumb.Item>
       </Breadcrumb>

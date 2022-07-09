@@ -13,7 +13,7 @@ const Login = () => {
           <NavHomepage />
         </Container>
 
-        <Breadcrumb className="show-drink-breadcrumb">
+        <Breadcrumb className="show-wine-breadcrumb">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item active>Login</Breadcrumb.Item>
         </Breadcrumb>

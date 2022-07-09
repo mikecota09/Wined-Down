@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-bootstrap';
-import Navbar from "react-bootstrap";
+// import Navbar from "react-bootstrap";
 import { getTokenFromLocalStorage, getPayload } from "../auth/auth";
 import axios from 'axios';
 
 const Nav = () => {
     const [userInfo, setUserInfo] = useState([])
-
+    const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
 
@@ -20,7 +20,7 @@ const Nav = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const { data } = await axios.get('/api/user',
+                const { data } = await axios.get('/api/profile',
                 { 
                     headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}`},
                 })
@@ -33,7 +33,7 @@ const Nav = () => {
     }, [])
     console.log('userInfo', userInfo)
 
-    retun(
+    return(
         <div className="container">
             <nav className="navbar">
                 <div className="nav-logo">

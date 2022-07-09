@@ -44,7 +44,7 @@ const NavHompage = () => {
         <nav className="homepage-navbar-wrapper">
           <div className="nav-logo-div">
             <Link to="/" className="navbar-logo">
-              Heiss
+              Wine Down
             </Link>
           </div>
 
@@ -55,7 +55,7 @@ const NavHompage = () => {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/drinks"
+                to="/wines"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -64,7 +64,7 @@ const NavHompage = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="/heiss-room"
+                to="/ratings"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

@@ -1,18 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;700&display=swap');
 
 /* ---------------------------------------------------------------*/
 //                     //** GLOBAL **//
 // h font-family: ‘Marko One’, serif;
 // body font-family: 'Raleway', sans-serif;
 // Global
-$primaryPink: #f7cac7;
-$primaryBlue: #99cee3;
-$primaryGreen: #9cca89;
-$primaryYellow: #f9d85f;
-$primaryGrey: #e8ede5;
-$primaryBrown: #360719; // the  color for the fonts
+$primaryPink: #F7CAC9;
+$primaryBlue: #99bEE3;
+$primaryGreen: #9CaA89;
+$primaryYellow: #F9a85F;
+$primaryGrey: #E6EDE5;
+$primaryBrown: #390719; // the  color for the fonts
 
 * {
   box-sizing: border-box;
@@ -21,26 +21,26 @@ $primaryBrown: #360719; // the  color for the fonts
 }
 
 body {
-  color: $primaryBrown;
+  color:$primaryBrown;
 }
 
+
 h2 {
-  font-family: "Marko One", serif;
+  font-family: 'Marko One', serif;
   font-size: 4.5em;
 }
 
-h3,
-p {
-  font-family: "Raleway", sans-serif;
+h3, p {
+  font-family: 'Raleway', sans-serif;
 }
+
 
 /* ---------------------------------------------------------------*/
 //                     //** HOMEPAGE **//
 
-// Homepage styling Bex Wednesday PM
 .homepage {
   .hero {
-    //background-image: url(./images/hero.png);
+    background-image: url(./images/hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: inherit;
@@ -66,7 +66,7 @@ p {
       }
     }
   }
-
+  
   .zig-zag {
     position: relative;
     z-index: 1;
@@ -74,7 +74,6 @@ p {
     margin-bottom: -200px;
 
     .figure-img.img-fluid {
-      // margin-right: -50px;
       width: inherit;
     }
   }
@@ -85,7 +84,7 @@ p {
     .choice-wrapper {
       margin: 5px;
       padding: 0 30px;
-      .drink {
+      .wine {
         padding-top: 30px;
         h2 {
           font-size: 3rem; //.hero title is 3.5rem, so please don't make this bigger than that.
@@ -102,7 +101,7 @@ p {
       background-color: $primaryPink;
       div.card-title.h5 {
         font-size: 1.5em;
-        font-family: "Marko One", serif;
+        font-family: 'Marko One', serif;
       }
       p.card-text {
         font-size: 1.25em;
@@ -132,7 +131,9 @@ p {
       }
       .heiss-room-copy {
         font-size: 1.5rem;
+
       }
+
     }
 
     .carousel {
@@ -155,8 +156,9 @@ p {
         margin: 0 auto;
       }
     }
+
   }
-  .heiss-img-wrapper {
+  .heiss-img-wrapper{
     display: flex;
     justify-content: center;
     margin-top: -50px;
@@ -192,6 +194,7 @@ p {
 //   font-weight: bold;
 // }
 
+
 /* ---------------------------------------------------------------*/
 //                     //** NAVBAR STYLING **//
 
@@ -224,13 +227,13 @@ p {
               text-decoration: none;
               font-size: 1.2rem;
             }
+            }
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 1.2rem;
           }
-          a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-          }
-          .signup-btn {
+          .signup-btn{
             border-radius: 5px;
             background-color: transparent;
             color: white;
@@ -239,7 +242,7 @@ p {
             text-decoration: none;
             border: 1px solid white;
           }
-          .login-btn {
+          .login-btn{
             color: white;
             text-decoration: none;
             border: none;
@@ -269,10 +272,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   .nav-logo-div {
     .navbar-logo {
-      font-family: "Marko One", serif;
+      font-family: 'Marko One', serif;
       color: $primaryBrown;
       justify-self: start;
       cursor: pointer;
@@ -280,7 +283,7 @@ p {
       font-size: 2rem;
     }
   }
-  .signup-btn {
+  .signup-btn{
     border-radius: 5px;
     background-color: $primaryYellow;
     color: $primaryBrown;
@@ -289,7 +292,7 @@ p {
     text-decoration: none;
     border: 1px solid $primaryBrown;
   }
-  .login-btn {
+  .login-btn{
     color: $primaryBrown;
     text-decoration: none;
     border: none;
@@ -301,129 +304,140 @@ p {
   //   border: none;
   //   outline: none;
   //   }
+  
+    
 
   //*? Homepage iPad screen size *//
   @media screen and (max-width: 768px) {
+
     .homepage {
       .hero {
-        .fas.fa-times,
-        .fas.fa-times::before {
-          color: #ffffff;
-          font-size: 2rem;
-        }
-        .fas.fa-times::before {
-          color: #ffffff;
-          font-size: 2rem;
-        }
+              .fas.fa-times, .fas.fa-times::before {
+                color: #FFFFFF;
+                font-size: 2rem;
+              }
+              .fas.fa-times::before {
+                color: #FFFFFF;
+                font-size: 2rem;
+              }
       }
     }
-    .homepage-nav {
-      color: #ffffff;
+  .homepage-nav {
+    color: #FFFFFF;
 
-      .fa-bars {
-        color: #ffffff;
-      }
+    
+    .fa-bars {
+      color: #FFFFFF;
+    }
 
-      .fas.fa-times,
-      .fas.fa-times::before {
-        color: #ffffff;
-        font-size: 2rem;
-      }
+    .fas.fa-times, .fas.fa-times::before {
+      color: #FFFFFF;
+      font-size: 2rem;
+    }
+    
 
-      .nav-menu {
-        display: flex;
-        flex-direction: column;
-        width: 33%;
-        height: 90vh;
-        position: absolute;
-        top: 80px;
-        right: 0%;
-        opacity: 1;
-        transition: all 0.5s ease;
-      }
-
-      .nav-menu.active {
-        color: white;
-        background: $primaryBrown;
-        right: 0%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
-      }
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      right: 0%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      color: white;
+      background: $primaryBrown;
+      right: 0%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
     }
   }
 }
+  }
+
+
+
+
 
 //** ALL PAGES navbar styling ** //
 
-// .navbar-wrapper {
-//   background-color: $primaryPink;
-//   height: 80px;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   font-size: 1.2rem;
-// }
+  // .navbar-wrapper {
+  //   background-color: $primaryPink;
+  //   height: 80px;
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   align-items: center;
+  //   font-size: 1.2rem;
+  // }
 
-// .nav-logo-div {
-//   .navbar-logo {
-//     font-family: 'Marko One', serif;
-//     color: $primaryBrown;
-//     justify-self: start;
-//     // margin-left: 20px;
-//     cursor: pointer;
-//     text-decoration: none;
-//     font-size: 2rem;
-//   }
-// }
-
-.fa-firstdraft {
-  color: $primaryBrown;
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
-}
-
-.nav-menu {
-  display: flex;
-  margin: 0;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  width: 70vw;
-  justify-content: flex-end;
-
-  .nav-item {
+  // .nav-logo-div {
+  //   .navbar-logo {
+  //     font-family: 'Marko One', serif;
+  //     color: $primaryBrown;
+  //     justify-self: start;
+  //     // margin-left: 20px;
+  //     cursor: pointer;
+  //     text-decoration: none;
+  //     font-size: 2rem;
+  //   }
+  // }
+  
+  
+  .fa-firstdraft {
+    color: $primaryBrown;
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .nav-menu {
     display: flex;
+    margin: 0;
     align-items: center;
-    height: 80px;
-    margin-right: 50px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: flex-end;
+    
 
-    a {
-      .nav-links {
-        color: $primaryBrown;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        margin-right: 20px;
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      margin-right: 50px;
+
+
+      a {
+        .nav-links {
+          color: $primaryBrown;
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          margin-right: 20px;
+        }
+      }
+      .nav-links:hover {
+        // text-decoration: underline;
+        border-bottom: 2px solid $primaryBrown;
+        transition: all 0.2s ease-out;
       }
     }
-    .nav-links:hover {
-      // text-decoration: underline;
-      border-bottom: 2px solid $primaryBrown;
-      transition: all 0.2s ease-out;
-    }
   }
-}
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
 
-.nav-links-mobile {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-}
-
-// Smaller screens ALL PAGES NAVBAR
+  // Smaller screens ALL PAGES NAVBAR
 @media screen and (max-width: 768px) {
+
   .nav-wrapper {
     background-color: $primaryPink;
   }
@@ -461,7 +475,7 @@ p {
   //     // text-decoration: underline;
   //     border-bottom: 2px solid white;
   //     transition: all 0.2s ease-out;
-
+    
   // }
 
   .navbar-logo {
@@ -486,6 +500,8 @@ p {
     }
   }
 
+
+
   .nav-links-mobile {
     display: block;
     text-align: center;
@@ -503,18 +519,22 @@ p {
     background: $primaryBrown;
     color: #fff;
     transition: 250ms;
-    // text-decoration: underline;
-    border-bottom: 2px solid $primaryBrown;
-    transition: all 0.2s ease-out;
+      // text-decoration: underline;
+      border-bottom: 2px solid $primaryBrown;
+      transition: all 0.2s ease-out;
+    
   }
 
   button {
     display: none;
-    background-color: #f7cac7;
-    padding-bottom: 10px;
-    align-items: center;
+  background-color: #F7CAC7;
+  padding-bottom: 10px;
+  align-items: center;
   }
 }
+
+
+
 
 /* ---------------------------------------------------------------*/
 // Index page styling
@@ -522,7 +542,7 @@ p {
 // * All colours are placwholders atm - Daria
 .index-wrapper.container {
   // background-color: $primaryGrey;
-  // hero section
+  // hero section 
   .sorting-row-wrapper.container {
     margin: 0 30px;
     display: flex;
@@ -540,7 +560,7 @@ p {
       background-color: white;
       color: $primaryBrown;
       border-right: $primaryBrown;
-      font-family: "raleway", sans-serif;
+      font-family: 'raleway', sans-serif;
       font-size: 1.2em;
     }
     button:hover {
@@ -554,8 +574,9 @@ p {
   }
 
   .align-items-center.index-hero-row.row {
+    
     .index-hero-img {
-      //background-image: url(./assets/indexpagehero.jpeg);
+      background-image: url(./assets/logo.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -563,7 +584,7 @@ p {
       height: 505px;
     }
     .index-hero-txt {
-      // background-color: $primaryPink;
+      // background-color: $primaryPink; 
       text-align: center;
       padding: 100px;
       p {
@@ -572,58 +593,58 @@ p {
       }
     }
     h2 {
-      font-family: "Marko One", serif;
+      font-family: 'Marko One', serif;
       font-size: 4.5em;
-    }
-
-    //  API section
-    // buttons row
-    .buttons-row.row {
-      .shop-drinks.col {
-        display: flex;
-        justify-content: flex-start;
-        font-weight: 700;
-        font-size: 36px;
-      }
-
-      .shop-drinks-h3 {
-        padding-left: 50px;
-      }
-
-      .sorting-buttons.col-7 {
-        display: flex;
-        justify-content: flex-start;
-      }
-    }
   }
 
-  // api display section on the right
-  .api-wrapper.container {
-    .right-api {
+  //  API section
+  // buttons row
+    .buttons-row.row {
+      .shop-wines.col {
+      display: flex;
+      justify-content: flex-start;
+      font-weight: 700;
+      font-size: 36px;
+    }
+
+    .shop-wines-h3 {
+      padding-left: 50px;
+    }
+  
+    .sorting-buttons.col-7 {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+// api display section on the right
+.api-wrapper.container {
+  .right-api {
+    justify-content: center;
+    // overflow-y: scroll;
+    .api-row {
       justify-content: center;
-      // overflow-y: scroll;
-      .api-row {
-        justify-content: center;
-        margin-left: 15px;
-        margin-right: 15px;
-        // justify-content: space-between;
+      margin-left: 15px;
+      margin-right: 15px;
+      // justify-content: space-between;
+    }
+    .card {
+      // max-width: 300px;
+      margin: 25px 10px;
+      // margin-left: 15px;
+      // margin-right: 15px;
+      border: none;
+      img {
+        object-fit: cover;
       }
-      .card {
-        // max-width: 300px;
-        margin: 25px 10px;
-        // margin-left: 15px;
-        // margin-right: 15px;
-        border: none;
-        img {
-          object-fit: cover;
-        }
-        .type {
-          font-size: 0.9em;
-          height: 100px;
-        }
+      .type {
+        font-size: 0.9em;
+        height: 100px;
       }
+    }
       .card-header {
-        background-color: $primaryPink;
+        background-color:$primaryPink;
         height: 100px;
       }
       .card-body {
@@ -645,10 +666,15 @@ p {
           margin-left: 45px;
           margin-bottom: 20px;
         }
+      
+
+        }
       }
     }
-  }
 }
+
+
+
 
 /* ---------------------------------------------------------------*/
 // LOGIN AND REGUSTER PAGES STYLING //
@@ -662,7 +688,7 @@ p {
   h2 {
     text-align: center;
     margin: 20px;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2.75rem;
   }
   input {
@@ -671,11 +697,14 @@ p {
 
   button {
     margin-bottom: 20px;
+
   }
+
 }
 
+
 // Becca breadcrumb styling
-.show-drink-breadcrumb {
+.show-wine-breadcrumb {
   margin-top: 20px;
   padding-left: 40px;
   a {
@@ -688,31 +717,32 @@ p {
   padding: 20px 0 0 27px;
 }
 
-// Styling for Show Drink Route
-.show-drink {
+
+// Styling for Show Wine Route
+.show-wine {
   .image-text {
     // background-color: #f8f9fa;
     margin: 40px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+  
     .image-container {
       padding: 0;
     }
     max-height: 400px;
 
-    img {
-      height: 403px;
-      width: 403px;
-      margin: 0;
-      display: block;
-      object-fit: cover;
-    }
+      img {
+        height: 403px;
+        width: 403px;
+        margin: 0;
+        display: block;
+        object-fit: cover;
+      }
 
     .right {
       h2 {
-        font-family: "raleway", sans-serif;
+        font-family: 'raleway', sans-serif;
       }
       padding: 0;
       max-height: 403px;
@@ -741,9 +771,9 @@ p {
       }
     }
     h4 {
-      font-family: "Raleway", sans-serif;
+      font-family: 'Raleway', sans-serif;
       .country-name {
-        font-family: "Raleway", sans-serif;
+        font-family: 'Raleway', sans-serif;
       }
     }
     .content {
@@ -769,12 +799,12 @@ p {
 //     margin-bottom: 60px;
 //     }
 //   }
-
+  
 //   .map-container {
 //     height: calc(100vh - 52px);
 //     width: 100%;
 //   }
-
+  
 //   .map-controller {
 //     position: absolute;
 //     top: 0;
@@ -786,29 +816,31 @@ p {
 //     padding: 0.8rem;
 //     margin: 1rem;
 //   }
-
+  
 //   .buttons {
 //     justify-content: space-evenly !important;
 //   }
-
+  
 //   .marker {
 //     font-size: 20px;
 //   }
-
+  
 //   .rocket {
 //     display: block;
 //     transform: translateX(-20px);
 //   }
+  
+  .footer {
+    background-color: $primaryYellow;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 80px;
 
-.footer {
-  background-color: $primaryYellow;
-  text-align: center;
-  margin-top: 250px;
-  margin-bottom: 0;
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
 
+  }
+  
 //   .covered {
 //   margin-bottom: 70px;
 //   margin-top: 40px;
@@ -848,7 +880,7 @@ p {
     background-color: white;
     color: $primaryBrown;
     border-right: $primaryBrown;
-    font-family: "raleway", sans-serif;
+    font-family: 'raleway', sans-serif;
     font-size: 1.2em;
   }
   button:hover {
@@ -856,10 +888,11 @@ p {
   }
 }
 
-.show-drink-breadcrumb {
+.show-wine-breadcrumb {
   margin-top: 0px;
   padding: 0px;
 }
+
 
 div.header.container {
   display: flex;
@@ -868,15 +901,16 @@ div.header.container {
 }
 
 div.createdItems.container-fluid {
-  max-width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 
   a.linkToShowSuggestion {
     text-decoration: none;
-    color: #360719;
+    color: #360719; 
   }
   div.suggestions.col {
     margin: 1rem;
@@ -886,6 +920,7 @@ div.createdItems.container-fluid {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
+    
   }
   h5.card-header {
     background-color: $primaryPink;
@@ -897,23 +932,25 @@ div.createdItems.container-fluid {
     background-color: $primaryGrey;
     color: #360719;
   }
-
+  
   div.header.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
+  
   div.createdItems.container {
+    
     a.linkToShowSuggestion {
       text-decoration: none;
-      color: #360719;
+      color: #360719; 
     }
     div.suggestions.container {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 1rem;
+      
     }
 
     div.createdItems.col {
@@ -924,24 +961,30 @@ div.createdItems.container-fluid {
     .outline-light {
       margin-bottom: 3px;
     }
-  }
+
+    }
+  
 }
+
 
 // Edit Profile Page
 .edit-profile-wrapper {
   div.suggestChangeForm.container {
     max-width: min-content;
-    background-color: #e8ede5;
+    background-color: #E8EDE5;
     padding: 2rem;
     margin: 200px;
   }
-
+  
   div.image-text {
     button.btn.btn-primary {
       margin-left: 5px;
     }
+  
+  
   }
 }
+
 
 // $primaryPink: #F7CAC7;
 // $primaryBlue: #99CEE3;
@@ -970,7 +1013,7 @@ div.createdItems.container-fluid {
       background-color: white;
       color: $primaryBrown;
       border-right: $primaryBrown;
-      font-family: "raleway", sans-serif;
+      font-family: 'raleway', sans-serif;
       font-size: 1.1em;
     }
     button:hover {
@@ -980,14 +1023,14 @@ div.createdItems.container-fluid {
       border-right: none;
     }
   }
-  .drink-wrapper {
+  .wine-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .suggested-drink {
+    .suggested-wine {
       margin: 20px;
-      .suggested-drink-header {
+      .suggested-wine-header {
         .heiss-room-title {
           display: flex;
           align-items: center;
@@ -1002,13 +1045,13 @@ div.createdItems.container-fluid {
         }
         .information {
           margin-top: 10px;
-          .drink-name {
+          .wine-name {
             font-weight: bold;
             font-size: 1.2em;
           }
         }
       }
-      .suggested-drink-footer {
+      .suggested-wine-footer {
         .comments-stats {
           display: flex;
           justify-content: space-around;
@@ -1072,16 +1115,15 @@ div.createdItems.container-fluid {
     .cartpage-info {
       display: flex;
     }
-    img,
-    svg {
+    img, svg {
       // width: 100%;
-      width: 400px;
+      width:400px;
       padding: 1rem;
       margin-bottom: 8px;
       display: grid;
       grid-template-columns: 1fr 4fr 1fr 1 fr 1fr;
       gap: 8px;
-      background: #e8ede5;
+      background: #E8EDE5;
       border-radius: 2px;
       place-items: center;
     }
@@ -1091,14 +1133,14 @@ div.createdItems.container-fluid {
       color: #360719;
       border: 1px solid $primaryYellow;
     }
-    .checkout-success.btn.btn-warning {
-      color: #360719;
-      background-color: #f9d85f;
-      border-color: #f9d85f;
-      height: 54px;
-      font-size: 20px;
-      font-weight: bold;
-      width: auto;
+    .checkout-success.btn.btn-warning{
+        color: #360719;
+        background-color: #F9D85F;
+        border-color: #F9D85F;
+        height: 54px;
+        font-size: 20px;
+        font-weight: bold;
+        width: auto;
     }
     // .cart-wrapper.container.cartpage img.cart-wrapper.container.cartpage svg {
     //   width: 200px;
@@ -1108,12 +1150,12 @@ div.createdItems.container-fluid {
 
 /* ---------------------------------------------------------------*/
 
-// about page styling
+// about page styling 
 .about-page {
   color: $primaryBrown;
   .about-title {
     background-color: $primaryPink;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 3em;
     margin-bottom: 50px;
@@ -1124,7 +1166,7 @@ div.createdItems.container-fluid {
     padding-bottom: 30px;
   }
   .information.row {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
     margin: 0 auto;
     .names.col {

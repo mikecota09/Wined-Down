@@ -7,9 +7,10 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { ImageUploadField } from "../helpers/ImageUploadField";
 import Footer from "../common/Footer";
-//import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 const Register = () => {
+  
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -59,7 +60,10 @@ const Register = () => {
       <Container fluid sticky="top" className="nav-container-pages">
         <NavHomepage />
       </Container>
-
+      <Breadcrumb className="show-wine-breadcrumb">
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item active>Register</Breadcrumb.Item>
+      </Breadcrumb>
       <Container className="login-register-outer-box">
         <h2>Register</h2>
         <Form onSubmit={handleSubmit}>
@@ -139,4 +143,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Register

@@ -16,18 +16,6 @@ const UserProfile = () => {
 
   const navigate = useNavigate();
 
-  //  useEffect(() => {
-  //    const getData = async () => {
-  //      try {
-  //        const { data } = await axios.get("/api/suggested-drinks");
-  //        setUserInfo(data);
-  //      } catch (err) {
-  //        console.log("err", err);
-  //      }
-  //    };
-  //    getData();
-  //  }, []);
-  //  console.log("userinfo", userInfo);
 
   useEffect(() => {
     const getData = async () => {

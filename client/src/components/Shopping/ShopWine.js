@@ -53,7 +53,7 @@ const Shopwine = () => {
 
         <Breadcrumb className="show-drink-breadcrumb">
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/drinks">Browse Wine</Breadcrumb.Item>
+          <Breadcrumb.Item href="/wines">Browse Wine</Breadcrumb.Item>
           <Breadcrumb.Item active>Cart</Breadcrumb.Item>
         </Breadcrumb>
         <Container className="cartpage">
@@ -62,7 +62,7 @@ const Shopwine = () => {
               if (wine !== null) {
                 return (
                   <div className="cartpage-info">
-                    <div className="drink-img">
+                    <div className="wine-img">
                       <img src={wine[0].image}></img>
                     </div>
                     <p>{wine[0].wine}</p>

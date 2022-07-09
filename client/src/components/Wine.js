@@ -37,7 +37,7 @@ const WineShow = () => {
     event.preventDefault();
     const total = quantity * wine.price;
     const formData = {
-      drinkId: wine._id,
+      wineId: wine._id,
       quantity: parseInt(quantity),
       price: wine.price,
       total: total,
@@ -70,7 +70,7 @@ const WineShow = () => {
         <Breadcrumb.Item active>{wine.wine}</Breadcrumb.Item>
       </Breadcrumb>
 
-      <Container className="show-drink" fluid>
+      <Container className="show-wine" fluid>
         <div className="image-text">
           {/* <div className="image"> */}
           <img alt={wine.wine} src={wine.image} />
