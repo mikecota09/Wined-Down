@@ -168,28 +168,6 @@ p {
   }
 }
 
-// .btn-outline-light {
-//   color: #f8f9fa;
-//   border-color: #f8f9fa;
-//   height: 54px;
-//   font-size: 20px;
-//   font-weight: bold;
-// }
-
-// .btn-warning {
-//   color: #360719;
-//   background-color: #F9D85F;
-//   border-color: #F9D85F;
-//   height: 54px;
-//   font-size: 20px;
-//   font-weight: bold;
-//   width: 220px;
-// }
-
-// .paragraph span {
-//   font-weight: bold;
-// }
-
 /* ---------------------------------------------------------------*/
 //                     //** NAVBAR STYLING **//
 
@@ -295,11 +273,6 @@ p {
     // border: 1px solid $primaryBrown;
   }
 
-  // button:focus {
-  //   border: none;
-  //   outline: none;
-  //   }
-
   //*? Homepage iPad screen size *//
   @media screen and (max-width: 768px) {
     .homepage {
@@ -351,29 +324,6 @@ p {
     }
   }
 }
-
-//** ALL PAGES navbar styling ** //
-
-// .navbar-wrapper {
-//   background-color: $primaryPink;
-//   height: 80px;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   font-size: 1.2rem;
-// }
-
-// .nav-logo-div {
-//   .navbar-logo {
-//     font-family: 'Marko One', serif;
-//     color: $primaryBrown;
-//     justify-self: start;
-//     // margin-left: 20px;
-//     cursor: pointer;
-//     text-decoration: none;
-//     font-size: 2rem;
-//   }
-// }
 
 .fa-firstdraft {
   color: $primaryBrown;
@@ -1135,16 +1085,16 @@ div.createdItems.container-fluid {
         text-decoration: none;
         margin: 5px;
       }
-      .bex a:hover {
+      .cota a:hover {
         background-color: $primaryPink;
       }
-      .daria a:hover {
+      .chen a:hover {
         background-color: $primaryGreen;
       }
-      .ole a:hover {
+      .wes a:hover {
         background-color: $primaryYellow;
       }
-      .victoria a:hover {
+      .abe a:hover {
         background-color: $primaryBlue;
       }
     }
