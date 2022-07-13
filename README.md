@@ -56,12 +56,13 @@ For Frontend, we used React to create visuals and we also used Bootstrap to opti
 - 
 
 ## Authors
-- [Abe Shaw]()
-- [Mike Cota]()
-- [Weston Barnes]()
+
+- [Mike Cota](https://github.com/mikecota09)
+- [Weston Barnes](https://github.com/BKWes)
+- [Abe Shaw](https://github.com/abeshaw97)
 - [Mario Butler]()
-- [Chen Wang]()
+- [Chen Wang](https://github.com/wangheer2010)
 
 ## Deployment
 
-[Link]()
+[Link](https://wined-down.herokuapp.com/)
