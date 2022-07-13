@@ -40,8 +40,9 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("/api/register", formData);
-      navigate.push("/login");
+      await axios.post("http://localhost:4001/api/register", formData);
+      console.log('done registered')
+      navigate("/login");
     } catch (err) {
       console.log("error response", err.response.data.errors);
       console.log("err.response", err.response);

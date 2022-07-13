@@ -1,4 +1,5 @@
-import User from '../models/user.js'
+import User from '../models/User.js'
+//const User= require('../models/User.js')
 import jwt from 'jsonwebtoken'
 import { secret } from '../config/environment.js'
 
