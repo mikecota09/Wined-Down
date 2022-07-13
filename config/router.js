@@ -21,7 +21,15 @@ import {
   editUser
 } from '../controllers/users.js'
 
+import {
+  registerUser,
+  loginUser
+} from '../controllers/auth'
+
 const router = express.Router();
+
+router.route('/register').post(registerUser);
+router.route('/login').post(loginUser);
 
 router.route('/wines').get(getAllWines).post(createWine);
 router.route('/wines/:id').get(getOneWine).put(editWine).delete(deleteWine);
