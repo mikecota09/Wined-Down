@@ -17,18 +17,15 @@ const About = () => {
         <Breadcrumb.Item active>About</Breadcrumb.Item>
       </Breadcrumb>
       <Container className="about-page">
-        {/* <Row>
+         <Row>
           <Col className="about-title">About this project</Col>
-        </Row> */}
+        </Row> 
         <Row>
           <Col className="about-copy">
             <>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              <p>Wine Down was created for all of our fellow wine lovers out there!
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                here you will find many different wine options that you can add to your wine cellar =) along with a market place community coming soon!
               </p>
             </>
           </Col>
