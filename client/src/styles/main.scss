@@ -125,14 +125,14 @@ p {
   }
 
   .room {
-    .heiss-room {
+    .tasting-room {
       padding: 100px 150px 100px 150px;
       text-align: center;
       h2 {
         font-size: 3rem;
         padding-bottom: 30px;
       }
-      .heiss-room-copy {
+      .tasting-room-copy {
         font-size: 1.5rem;
       }
     }
@@ -158,41 +158,19 @@ p {
       }
     }
   }
-  .heiss-img-wrapper {
+  .tasting-img-wrapper {
     display: flex;
     justify-content: center;
     margin-top: -50px;
     margin-bottom: 100px;
   }
-  .heiss-img {
+  .tasting-img {
     width: fit-content;
   }
-  .heiss-room h2 {
+  .tasting-room h2 {
     margin-top: -20px;
   }
 }
-
-// .btn-outline-light {
-//   color: #f8f9fa;
-//   border-color: #f8f9fa;
-//   height: 54px;
-//   font-size: 20px;
-//   font-weight: bold;
-// }
-
-// .btn-warning {
-//   color: #360719;
-//   background-color: #F9D85F;
-//   border-color: #F9D85F;
-//   height: 54px;
-//   font-size: 20px;
-//   font-weight: bold;
-//   width: 220px;
-// }
-
-// .paragraph span {
-//   font-weight: bold;
-// }
 
 /* ---------------------------------------------------------------*/
 //                     //** NAVBAR STYLING **//
@@ -299,11 +277,6 @@ p {
     // border: 1px solid $primaryBrown;
   }
 
-  // button:focus {
-  //   border: none;
-  //   outline: none;
-  //   }
-
   //*? Homepage iPad screen size *//
   @media screen and (max-width: 768px) {
     .homepage {
@@ -357,27 +330,6 @@ p {
 }
 
 //** ALL PAGES navbar styling ** //
-
-// .navbar-wrapper {
-//   background-color: $primaryPink;
-//   height: 80px;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   font-size: 1.2rem;
-// }
-
-// .nav-logo-div {
-//   .navbar-logo {
-//     font-family: 'Marko One', serif;
-//     color: $primaryBrown;
-//     justify-self: start;
-//     // margin-left: 20px;
-//     cursor: pointer;
-//     text-decoration: none;
-//     font-size: 2rem;
-//   }
-// }
 
 .fa-firstdraft {
   color: $primaryBrown;
@@ -458,13 +410,6 @@ p {
     width: 100%;
     display: table;
   }
-
-  // .nav-links:hover {
-  //     // text-decoration: underline;
-  //     border-bottom: 2px solid white;
-  //     transition: all 0.2s ease-out;
-
-  // }
 
   .navbar-logo {
     position: absolute;
@@ -676,7 +621,6 @@ p {
   }
 }
 
-// Becca breadcrumb styling
 .show-drink-breadcrumb {
   margin-top: 20px;
   padding-left: 40px;
@@ -759,48 +703,6 @@ p {
   }
 }
 /* ---------------------------------------------------------------*/
-// MAP STYLING //
-// .map-styling {
-//   div.card-group {
-//     p {
-//     margin-top: 30px;
-//     color: #360719;
-//     width: 718px;
-//     word-spacing: 4px;
-//     font-size: 24px;
-//     margin-bottom: 60px;
-//     }
-//   }
-
-//   .map-container {
-//     height: calc(100vh - 52px);
-//     width: 100%;
-//   }
-
-//   .map-controller {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     max-width: 220px;
-//     background: #fff;
-//     border-radius: 5px;
-//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-//     padding: 0.8rem;
-//     margin: 1rem;
-//   }
-
-//   .buttons {
-//     justify-content: space-evenly !important;
-//   }
-
-//   .marker {
-//     font-size: 20px;
-//   }
-
-//   .rocket {
-//     display: block;
-//     transform: translateX(-20px);
-//   }
 
 .footer {
   background-color: $primaryGrey;
@@ -810,14 +712,6 @@ p {
   padding-top: 30px;
   padding-bottom: 80px;
 }
-
-//   .covered {
-//   margin-bottom: 70px;
-//   margin-top: 40px;
-//   font-size: 24px;
-//   width: 720px;
-//   }
-// }
 
 /* ---------------------------------------------------------------*/
 
@@ -945,15 +839,7 @@ div.createdItems.container-fluid {
   }
 }
 
-// $primaryPink: #F7CAC7;
-// $primaryBlue: #99CEE3;
-// $primaryGreen: #9CCA89;
-// $primaryYellow: #F9D85F;
-// $primaryGrey: #E8EDE5;
-// $primaryBrown: #360719; // the  color for the fonts
-
-// Becca styling for Heiss room
-.heiss-room-wrapper {
+.tasting-room-wrapper {
   // background-color: $primaryGrey;
   .sorting-row-wrapper.container {
     margin: 0 10px;
@@ -990,7 +876,7 @@ div.createdItems.container-fluid {
     .suggested-drink {
       margin: 20px;
       .suggested-drink-header {
-        .heiss-room-title {
+        .tasting-room-title {
           display: flex;
           align-items: center;
           img {
@@ -1016,7 +902,7 @@ div.createdItems.container-fluid {
           justify-content: space-around;
         }
         .comments {
-          .heiss-room-comment {
+          .tasting-room-comment {
             display: flex;
             align-items: center;
             margin: 5px 0;

@@ -36,7 +36,7 @@ const SuggestDrink = () => {
       await axios.post("/api/suggested-drinks", formData, {
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` },
       });
-      navigate.push("/heiss-room");
+      navigate.push("/tasting-room");
     } catch (err) {
       console.log(err);
     }
@@ -60,8 +60,8 @@ const SuggestDrink = () => {
       <Container className="login-register-outer-box">
         <h2>Suggest a Drink</h2>
         <p>
-          At Heiss we love to hear your suggestions, so please let us know if
-          there is a drink you would like to see on our menu!
+          At Wined Down we love to hear your suggestions, so please let us know
+          if there is a wine you would like to see in our inventory!
         </p>
         <SuggestDrinkForm
           handleChange={handleChange}
@@ -76,6 +76,3 @@ const SuggestDrink = () => {
 };
 
 export default SuggestDrink;
-
-// dkgxxaoqn
-//  https://api.cloudinary.com/v1_1/dkgxxaoqn/image/upload

@@ -7,7 +7,7 @@ import DrinkShow from "./components/Drink.js";
 import DrinksIndex from "./components/DrinksIndex.js";
 import UserProfile from "./components/UserProfile.js";
 import SuggestDrink from "./components/Suggestions/SuggestDrink";
-import HeissRoom from "./components/Suggestions/HeissRoom.js";
+import TastingRoom from "./components/Suggestions/TastingRoom.js";
 import About from "./components/common/About.js";
 import ShopDrink from "./components/Shopping/ShopDrink.js";
 import ShopSuccess from "./components/Shopping/ShopSuccess";
@@ -21,7 +21,7 @@ const App = () => {
         <Route exact path="/profile/:id/edit" element={<SuggestionsEdit />} />
         <Route exact path="/drinks/:id" element={<DrinkShow />} />
         <Route exact path="/profile/:id" element={<SuggestedDrinkShow />} />
-        <Route exact path="/heiss-room" element={<HeissRoom />} />
+        <Route exact path="/tasting-room" element={<TastingRoom />} />
         <Route exact path="/drinks" element={<DrinksIndex />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<Login />} />

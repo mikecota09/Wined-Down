@@ -12,7 +12,7 @@ import Button from "react-bootstrap/Button";
 import { getPayload } from "../helpers/auth";
 import LoginBox from "../auth/LoginBox";
 
-const HeissRoom = () => {
+const TastingRoom = () => {
   const [suggestedDrinks, setSuggestedDrinks] = useState([]);
 
   const navigate = useNavigate();
@@ -74,7 +74,7 @@ const HeissRoom = () => {
         </Modal.Footer>
       </Modal>
 
-      <div className="heiss-room-wrapper">
+      <div className="tasting-room-wrapper">
         <Container className="sorting-row-wrapper">
           <Col className="shop-drinks">
             <h3 className="shop-drinks-h3">Heiss Room</h3>
@@ -101,4 +101,4 @@ const HeissRoom = () => {
   );
 };
 
-export default HeissRoom;
+export default TastingRoom;

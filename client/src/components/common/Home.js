@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import NavHomepage from "../common/NavHomepage";
 import { Link, useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import style from "../../styles/images/style.svg";
 import Happy from "../../styles/images/Happy.png";
 import Need from "../../styles/images/Need.png";
 import Choose from "../../styles/images/Choose.png";
@@ -13,7 +12,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import greentea from "../../styles/images/greentea.png";
+import redwine from "../../styles/images/redwine.png";
 import ladydrinks from "../../styles/images/ladydrinks.png";
 import mandrinks from "../../styles/images/mandrinks.png";
 import crossleg from "../../styles/images/crossleg.png";
@@ -90,12 +89,6 @@ const Home = () => {
           </div>
         </Container>
 
-        <Figure className="zig-zag">
-          <Figure.Image alt="zig-zag" src={style} />
-        </Figure>
-
-        <Container className="divider"></Container>
-
         <Container fluid className="choice">
           <Row>
             <Col xs={12} md={8}>
@@ -168,9 +161,9 @@ const Home = () => {
         </Container>
 
         <Container fluid className="room">
-          <div className="heiss-room">
+          <div className="tasting-room">
             <h2>Tasting Room</h2>
-            <div className="heiss-room-copy">
+            <div className="tasting-room-copy">
               <p>See what others are drinking</p>
             </div>
           </div>
@@ -206,18 +199,18 @@ const Home = () => {
             </Carousel.Item>
           </Carousel> */}
 
-          <Container className="heiss-img-wrapper">
-            <div className="heiss-img">
-              <img className="heiss-img" alt="greentea" src={greentea} />
+          <Container className="tasting-img-wrapper">
+            <div className="tasting-img">
+              <img className="tasting-img" alt="redwine" src={redwine} />
             </div>
             <div>
-              <img className="heiss-img" alt="ladydrinks" src={ladydrinks} />
+              <img className="tasting-img" alt="ladydrinks" src={ladydrinks} />
             </div>
             <div>
-              <img className="heiss-img" alt="mandrinks" src={mandrinks} />
+              <img className="tasting-img" alt="mandrinks" src={mandrinks} />
             </div>
             <div>
-              <img className="heiss-img" alt="mandrinks" src={crossleg} />
+              <img className="tasting-img" alt="mandrinks" src={crossleg} />
             </div>
           </Container>
 
