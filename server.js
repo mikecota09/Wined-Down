@@ -32,7 +32,7 @@ const startServer = async () => {
 
     app.use("/api", router);
 
-    app.use("/*", (_, res) =>
+    app.get("/*", (_, res) =>
       res.sendFile(`${__dirname}/client/build/index.html`)
     );
 
