@@ -2,17 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;700&display=swap");
 
+// eslint-disable-next-line
+
 /* ---------------------------------------------------------------*/
 //                     //** GLOBAL **//
 // h font-family: ‘Marko One’, serif;
 // body font-family: 'Raleway', sans-serif;
 // Global
-$primaryPink: #f7cac9;
-$primaryBlue: #99bee3;
-$primaryGreen: #9caa89;
-$primaryYellow: #f9a85f;
-$primaryGrey: #e6ede5;
-$primaryBrown: #390719; // the  color for the fonts
+$primaryPink: #f7cac7;
+$primaryBlue: #99cee3;
+$primaryGreen: #9cca89;
+$primaryYellow: #f9d85f;
+$primaryGrey: #e8ede5;
+$primaryBrown: #360719; // the  color for the fonts
 
 * {
   box-sizing: border-box;
@@ -37,9 +39,10 @@ p {
 /* ---------------------------------------------------------------*/
 //                     //** HOMEPAGE **//
 
+// Homepage styling Bex Wednesday PM
 .homepage {
   .hero {
-    background-image: url(./images/4.png);
+    background-image: url(./images/hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: inherit;
@@ -73,17 +76,18 @@ p {
     margin-bottom: -200px;
 
     .figure-img.img-fluid {
+      // margin-right: -50px;
       width: inherit;
     }
   }
 
   .choice {
-    background-color: $primaryPink;
+    background-color: $primaryGrey;
     padding: 150px 20px;
     .choice-wrapper {
       margin: 5px;
       padding: 0 30px;
-      .wine {
+      .drink {
         padding-top: 30px;
         h2 {
           font-size: 3rem; //.hero title is 3.5rem, so please don't make this bigger than that.
@@ -97,7 +101,7 @@ p {
     .need-choose-receive {
       margin: 0 30px;
       border: none;
-      background-color: $primaryPink;
+      background-color: $primaryGrey;
       div.card-title.h5 {
         font-size: 1.5em;
         font-family: "Marko One", serif;
@@ -168,6 +172,28 @@ p {
   }
 }
 
+// .btn-outline-light {
+//   color: #f8f9fa;
+//   border-color: #f8f9fa;
+//   height: 54px;
+//   font-size: 20px;
+//   font-weight: bold;
+// }
+
+// .btn-warning {
+//   color: #360719;
+//   background-color: #F9D85F;
+//   border-color: #F9D85F;
+//   height: 54px;
+//   font-size: 20px;
+//   font-weight: bold;
+//   width: 220px;
+// }
+
+// .paragraph span {
+//   font-weight: bold;
+// }
+
 /* ---------------------------------------------------------------*/
 //                     //** NAVBAR STYLING **//
 
@@ -229,7 +255,7 @@ p {
 }
 
 .nav-container-pages.container-fluid {
-  background-color: $primaryYellow;
+  background-color: $primaryGrey;
   color: $primaryBrown;
 
   a {
@@ -272,6 +298,11 @@ p {
     background: transparent;
     // border: 1px solid $primaryBrown;
   }
+
+  // button:focus {
+  //   border: none;
+  //   outline: none;
+  //   }
 
   //*? Homepage iPad screen size *//
   @media screen and (max-width: 768px) {
@@ -324,6 +355,29 @@ p {
     }
   }
 }
+
+//** ALL PAGES navbar styling ** //
+
+// .navbar-wrapper {
+//   background-color: $primaryPink;
+//   height: 80px;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   font-size: 1.2rem;
+// }
+
+// .nav-logo-div {
+//   .navbar-logo {
+//     font-family: 'Marko One', serif;
+//     color: $primaryBrown;
+//     justify-self: start;
+//     // margin-left: 20px;
+//     cursor: pointer;
+//     text-decoration: none;
+//     font-size: 2rem;
+//   }
+// }
 
 .fa-firstdraft {
   color: $primaryBrown;
@@ -503,7 +557,7 @@ p {
 
   .align-items-center.index-hero-row.row {
     .index-hero-img {
-      background-image: url(./assets/logo.png);
+      background-image: url(./assets/indexpagehero.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -527,14 +581,14 @@ p {
     //  API section
     // buttons row
     .buttons-row.row {
-      .shop-wines.col {
+      .shop-drinks.col {
         display: flex;
         justify-content: flex-start;
         font-weight: 700;
         font-size: 36px;
       }
 
-      .shop-wines-h3 {
+      .shop-drinks-h3 {
         padding-left: 50px;
       }
 
@@ -623,7 +677,7 @@ p {
 }
 
 // Becca breadcrumb styling
-.show-wine-breadcrumb {
+.show-drink-breadcrumb {
   margin-top: 20px;
   padding-left: 40px;
   a {
@@ -636,8 +690,8 @@ p {
   padding: 20px 0 0 27px;
 }
 
-// Styling for Show Wine Route
-.show-wine {
+// Styling for Show Drink Route
+.show-drink {
   .image-text {
     // background-color: #f8f9fa;
     margin: 40px 100px;
@@ -749,7 +803,7 @@ p {
 //   }
 
 .footer {
-  background-color: $primaryYellow;
+  background-color: $primaryGrey;
   text-align: center;
   margin-top: 250px;
   margin-bottom: 0;
@@ -804,7 +858,7 @@ p {
   }
 }
 
-.show-wine-breadcrumb {
+.show-drink-breadcrumb {
   margin-top: 0px;
   padding: 0px;
 }
@@ -928,14 +982,14 @@ div.createdItems.container-fluid {
       border-right: none;
     }
   }
-  .wine-wrapper {
+  .drink-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .suggested-wine {
+    .suggested-drink {
       margin: 20px;
-      .suggested-wine-header {
+      .suggested-drink-header {
         .heiss-room-title {
           display: flex;
           align-items: center;
@@ -950,13 +1004,13 @@ div.createdItems.container-fluid {
         }
         .information {
           margin-top: 10px;
-          .wine-name {
+          .drink-name {
             font-weight: bold;
             font-size: 1.2em;
           }
         }
       }
-      .suggested-wine-footer {
+      .suggested-drink-footer {
         .comments-stats {
           display: flex;
           justify-content: space-around;
@@ -1086,10 +1140,10 @@ div.createdItems.container-fluid {
         margin: 5px;
       }
       .cota a:hover {
-        background-color: $primaryPink;
+        background-color: $primaryGreen;
       }
       .chen a:hover {
-        background-color: $primaryGreen;
+        background-color: $primaryPink;
       }
       .wes a:hover {
         background-color: $primaryYellow;

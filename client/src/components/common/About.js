@@ -12,7 +12,7 @@ const About = () => {
         <NavHomepage />
       </Container>
 
-      <Breadcrumb className="show-wine-breadcrumb">
+      <Breadcrumb className="show-drink-breadcrumb">
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
         <Breadcrumb.Item active>About</Breadcrumb.Item>
       </Breadcrumb>
@@ -24,18 +24,16 @@ const About = () => {
           <Col className="about-copy">
             <>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                Hi! 👋 We are &#8216;Wined Down Wines&#8217;, an online wine
+                marketplace where you can buy all of your favorite wines, we
+                hope you find what you're looking for!
               </p>
             </>
           </Col>
         </Row>
         <Row className="information">
           <Col className="names">
-            <Row className="subtitle">The Team</Row>
+            <Row className="subtitle">The Wined Down Team</Row>
             <Row className="cota">
               <a
                 href="https://github.com/mikecota09"

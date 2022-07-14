@@ -33,9 +33,9 @@ const LoginBox = ({ path }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:4001/api/login", formData);
+      const { data } = await axios.post("/api/login", formData);
       setTokenToLocalStorage(data.token);
-      navigate(path);
+      navigate.push(path);
     } catch (err) {
       setError(true);
     }
@@ -77,7 +77,7 @@ const LoginBox = ({ path }) => {
         </Button>
       </Form>
       <Link to="/register" className="login-register">
-        Not yet registered? Create account here!
+        Not yet registered? Sign up here!
       </Link>
     </Container>
   );

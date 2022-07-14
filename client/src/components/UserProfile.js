@@ -11,11 +11,23 @@ import Row from "react-bootstrap/Row";
 import Footer from "./common/Footer.js";
 
 const UserProfile = () => {
-  const [userInfo] = useState([]);
+  const [userInfo, setUserInfo] = useState([]);
   const [profileInfo, setProfileInfo] = useState([]);
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await axios.get("/api/suggested-drinks");
+        setUserInfo(data);
+      } catch (err) {
+        console.log("err", err);
+      }
+    };
+    getData();
+  }, []);
+  console.log("userinfo", userInfo);
 
   useEffect(() => {
     const getData = async () => {
@@ -45,7 +57,7 @@ const UserProfile = () => {
       </Container>
       <Container fluid className="main-container">
         <Container className="header">
-          <Breadcrumb className="show-wine-breadcrumb">
+          <Breadcrumb className="show-drink-breadcrumb">
             <Breadcrumb.Item href="./.">Home</Breadcrumb.Item>
             <Breadcrumb.Item active>Profile</Breadcrumb.Item>
           </Breadcrumb>
@@ -55,10 +67,10 @@ const UserProfile = () => {
             <img src={profileInfo.image} alt={profileInfo.username} />
             <div className="welcome-text">
               <h3 className="title">
-                Welcome {profileInfo.username}, here are the wines you
-                purchased.
+                Welcome {profileInfo.username}, here are the drinks you
+                suggested.
               </h3>
-              <h4 className="small">Select a wine to edit or delete</h4>
+              <h4 className="small">Select a drink to edit or delete</h4>
             </div>
           </div>
           <button
@@ -85,13 +97,13 @@ const UserProfile = () => {
                           to={`/profile/${info._id}`}
                         >
                           <Card style={{ width: "18rem" }}>
-                            <Card.Header as="h5" key={info.wine}>
-                              {info.wine}
+                            <Card.Header as="h5" key={info.drink}>
+                              {info.drink}
                             </Card.Header>
                             <Card.Img
                               height={200}
                               variant="top"
-                              alt={info.wine}
+                              alt={info.drink}
                               src={info.image}
                             />
                           </Card>

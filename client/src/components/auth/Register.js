@@ -10,7 +10,6 @@ import Footer from "../common/Footer";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 const Register = () => {
-  
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -40,9 +39,8 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:4001/api/register", formData);
-      console.log('done registered')
-      navigate("/login");
+      await axios.post("/api/register", formData);
+      navigate.push("/login");
     } catch (err) {
       console.log("error response", err.response.data.errors);
       console.log("err.response", err.response);
@@ -61,10 +59,12 @@ const Register = () => {
       <Container fluid sticky="top" className="nav-container-pages">
         <NavHomepage />
       </Container>
-      <Breadcrumb className="show-wine-breadcrumb">
+
+      <Breadcrumb className="show-drink-breadcrumb">
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
         <Breadcrumb.Item active>Register</Breadcrumb.Item>
       </Breadcrumb>
+
       <Container className="login-register-outer-box">
         <h2>Register</h2>
         <Form onSubmit={handleSubmit}>
@@ -135,7 +135,7 @@ const Register = () => {
         </Form>
 
         <Link to="/login" className="login-register">
-          Already a user? Login now!
+          Already registered? Login here!
         </Link>
       </Container>
 
@@ -144,4 +144,4 @@ const Register = () => {
   );
 };
 
-export default Register
+export default Register;

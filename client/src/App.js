@@ -3,33 +3,34 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/common/Home.js";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
-
-import UserProfile from "./components/UserProfile";
-
-import About from "./components/common/About";
-import ShopWine from "./components/Shopping/ShopWine";
+import DrinkShow from "./components/Drink.js";
+import DrinksIndex from "./components/DrinksIndex.js";
+import UserProfile from "./components/UserProfile.js";
+import SuggestDrink from "./components/Suggestions/SuggestDrink";
+import HeissRoom from "./components/Suggestions/HeissRoom.js";
+import About from "./components/common/About.js";
+import ShopDrink from "./components/Shopping/ShopDrink.js";
+import ShopSuccess from "./components/Shopping/ShopSuccess";
+import SuggestedDrinkShow from "./components/SuggestedDrinkShow.js";
+import SuggestionsEdit from "./components/SuggestionsEdit.js";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/profile/:id/edit"></Route>
-        <Route path="/wines/:id">
-          {/* <WineShow /> */}
-        </Route>
-        <Route path="/profile/:id"></Route>
-        <Route path="/wines">
-          {/* <WineShow /> */}
-        </Route>
-        <Route exact path='/register' element={<Register/>}/>
-        <Route exact path='/login' element={<Login />}/>
-        <Route exact path='/profile' element={<UserProfile/>}/>
-        
-        <Route exact path="/about" element={<About />}/>
-        <Route exact path="/shop-wine" element={<ShopWine />}/>
-
-        <Route path="/shop-success"></Route>
-        <Route exact path="/" element={<Home />}/>
+        <Route exact path="/profile/:id/edit" element={<SuggestionsEdit />} />
+        <Route exact path="/drinks/:id" element={<DrinkShow />} />
+        <Route exact path="/profile/:id" element={<SuggestedDrinkShow />} />
+        <Route exact path="/heiss-room" element={<HeissRoom />} />
+        <Route exact path="/drinks" element={<DrinksIndex />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/profile" element={<UserProfile />} />
+        <Route exact path="/suggest-drink" element={<SuggestDrink />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/shop-drink" element={<ShopDrink />} />
+        <Route exact path="/shop-success" element={<ShopSuccess />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

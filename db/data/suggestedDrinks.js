@@ -1,0 +1,145 @@
+export default [
+  {
+    drink: "Amici 2019",
+    type: "Cabernet Sauvignon",
+    country: "California, USA",
+    description:
+      "Deep garnet-purple in color, it charges out of the gate with loads of blueberry preserves & stewed black plums notes on the nose with faint suggestions of redcurrant jelly and rose hip tea plus a waft of wild sage. Full-bodied & jam-packed with ripe black & blue fruit flavors.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hea/h69/15078178816030.png",
+    funFact: "",
+    price: 60,
+    countInStock: 20,
+    origin: "California",
+    longitude: 108.277199,
+    latitude: 14.058324,
+    icon: "🇻🇳",
+  },
+  {
+    drink: "Castello Del Poggio",
+    type: "Moscato",
+    country: "Italy",
+    description:
+      "Deep straw yellow with golden reflections, this moscato greets you with flavors of musk & peach, with deeper notes of honey & white flower. The palate is light, with an agile & elegant -yet compact- structure. Medium freshness & low minerality make this wine a pleasure to drink.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hba/h2d/12291690463262.png",
+    funFact: "",
+    price: 45,
+    countInStock: 20,
+    origin: "Italy",
+    longitude: 100.619652,
+    latitude: 34.047863,
+    icon: "🇹🇷",
+  },
+  {
+    drink: "Martin Ray Sonoma",
+    type: "Pinot Noir",
+    country: "California, USA",
+    description:
+      "A beautiful and tangy pinot with fresh strawberries and citrus undertones. It is medium-bodied with bright acidity and a fine line of tannins going through the center, with notes of red fruit and spice.",
+    image: "image.png",
+    funFact: "",
+    price: 100,
+    countInStock: 20,
+    origin: "California",
+    longitude: -77.781166,
+    latitude: 21.521757,
+    icon: "🇨🇺",
+  },
+  {
+    drink: "Muirwood Unoaked",
+    type: "Chardonnay",
+    country: "California, USA",
+    description:
+      "A delicious, unoaked Chardonnay with elegance and complexity. The cold fermentation in stainless steel preserves the crispness of the wine and enhances the mango and guava fruit flavors.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h3c/h40/15422423072798.png",
+    funFact: "",
+    price: 30,
+    countInStock: 20,
+    origin: "California",
+    longitude: 18.643501,
+    latitude: 60.128162,
+    icon: "🇸🇪",
+  },
+  {
+    drink: "Palliser Estate",
+    type: "Sauvignon Blanc",
+    country: "New Zealand",
+    description:
+      "This fresh Sauvignon Blanc has an elegant and finely concentrated style. Tropical fruit and herb flavors are intermixed with a nose that boasts aromas of passionfruit. Hints of minerality and citrus make this wine an exceptional pair with a seafood dish.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h40/h53/10791452311582.png",
+    funFact: "",
+    price: 25,
+    countInStock: 20,
+    origin: "New Zealand",
+    longitude: -102.552788,
+    latitude: 623.634501,
+    icon: "🇲🇽",
+  },
+  {
+    drink: "Renieri Rosso Di Montaalcino, 2019",
+    type: "Sangiovese",
+    country: "Italy",
+    description:
+      "A fresh red with aromas of raspberries, redcurrants, baking spices and orange peel. Medium-bodied with sleek tannins. Creamy texture with bright acidity and a fruity, zesty and flavorful finish with excellent length.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hbe/h89/11698269487134.png",
+    funFact: "",
+    price: 75,
+    countInStock: 20,
+    origin: "Italy",
+    longitude: 21.824312,
+    latitude: 39.074207,
+    icon: "🇬🇷",
+  },
+  {
+    drink: "Rivata",
+    type: "Prosecco",
+    country: "Italy",
+    description:
+      "The fruit forward initial flavor is followed by a fruit centric finish keeping strong notes of green apples, lemons and limes. Lively acidity and a juicy texture balance out the bright sweetness and keep the wine well composed.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h04/h3c/11864980357150.png",
+    funFact: "",
+    price: 25,
+    countInStock: 20,
+    origin: "Italy",
+    longitude: 108.277199,
+    latitude: 14.058324,
+    icon: "🇻🇳",
+  },
+  {
+    drink: "Veuve Clicquot Yellow Label Brut",
+    type: "Champagne",
+    country: "France",
+    description:
+      "Complex aromas of bright and beautiful ripe fruit, poached pear, grated ginger, and light cream. Excellent depth and persistence. Medium bodied, active and layered on the palate; dry, medium acidity, and well balanced.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hff/h43/14942220746782.png",
+    funFact: "",
+    price: 120,
+    countInStock: 20,
+    origin: "France",
+    longitude: 12.56738,
+    latitude: 41.87194,
+    icon: "🇮🇹",
+  },
+  {
+    drink: "Fonseca 20yr Tawny Porto",
+    type: "Dessert/Fortified Wine",
+    country: "Portugal",
+    description:
+      "Beautifully integrated nose of cocoa and orange peel unveils a syrupy palate brimming with nutty, toffee and red fruit characters. The finish is warm but very complex, long and structured. A very good example of its kind.",
+    image:
+      "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hd3/h4c/12291739418654.png",
+    funFact: "",
+    price: 250,
+    countInStock: 20,
+    origin: "Portugal",
+    longitude: 133.775131,
+    latitude: -25.274399,
+    icon: "🇦🇺",
+  },
+];
