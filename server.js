@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-// import Drink from './models/drink.js'
+import Drink from "./models/drink.js";
 import { dbURI, port } from "./config/environment.js";
 import router from "./config/router.js";
 import path from "path";
@@ -14,6 +14,7 @@ const startServer = async () => {
     await mongoose.connect(dbURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useCreateIndex: true,
     });
     console.log("🚀 Database has connected successfully");
 

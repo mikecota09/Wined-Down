@@ -18,7 +18,7 @@ const DisplayChecked = ({ handleChecked }) => {
             value="Coffee"
             onClick={handleChecked}
           >
-            Coffee
+            Wines
           </button>
           |
           <button
@@ -27,7 +27,7 @@ const DisplayChecked = ({ handleChecked }) => {
             value="Tea"
             onClick={handleChecked}
           >
-            Tea
+            Champagne
           </button>
           |
           <button

@@ -68,10 +68,10 @@ const ShopDrink = () => {
                       <img src={drink[0].image} alt=""></img>
                     </div>
                     <p>{drink[0].drink}</p>
-                    <p>Price: £{drink[0].price}</p>
+                    <p>Price: ${drink[0].price}</p>
                     <p>Quantity: {drink[1].quantity}</p>
                     <strong>
-                      <p>Subtotal: £{drink[1].total}</p>
+                      <p>Subtotal: ${drink[1].total}</p>
                     </strong>
                     <div>
                       <Button
