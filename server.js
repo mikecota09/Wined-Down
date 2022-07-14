@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import { databaseURI, port } from "./config/environment.js";
 import router from "./config/router.js";
 import path from "path";
+import cors from 'cors';
 
 const app = express();
 const __dirname = path.resolve();
@@ -26,6 +27,7 @@ const startServer = async () => {
     app.use(express.static(`${__dirname}/client/build`));
 
     app.use(express.json());
+    app.use(cors())
 
     app.use("/api", router);
 

@@ -1,3 +1,6 @@
+// import { createRequire } from 'module';
+// const require = createRequire(import.meta.url);
+
 import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 
@@ -5,7 +8,7 @@ const userSchema = new mongoose.Schema({
   username: { type: String, required: true, maxLength: 30, unique: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  image: { type: String, required: true }
+  image: { type: String, required: false }
 })
 
 // Reverse relationship that shows all wines related to current user
