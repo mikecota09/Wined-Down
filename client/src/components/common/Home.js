@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import NavHomepage from "../common/NavHomepage";
 import { Link, useNavigate } from "react-router-dom";
-// import AnimatedMap from './AnimatedMap.js'
 import Container from "react-bootstrap/Container";
 import style from "../../styles/images/style.svg";
 import Happy from "../../styles/images/Happy.png";
@@ -14,14 +13,12 @@ import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-// import Carousel from 'react-bootstrap/Carousel'
 import greentea from "../../styles/images/greentea.png";
 import ladydrinks from "../../styles/images/ladydrinks.png";
 import mandrinks from "../../styles/images/mandrinks.png";
 import crossleg from "../../styles/images/crossleg.png";
 import { getPayload } from "../helpers/auth.js";
 import { Modal } from "react-bootstrap";
-// import bighair from '../../styles/images/bighair.png'
 // import footer from '../../styles/images/footer.png'
 import LoginBox from "../auth/LoginBox.js";
 import Footer from "./Footer";
