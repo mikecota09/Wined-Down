@@ -78,4 +78,4 @@ For Frontend, we used React to create visuals and we also used Bootstrap to opti
 
 ## Screenshot
 
-![Shot-1](client\src\styles\images\screencapture-localhost-56963-2022-07-14-13_11_34.png)
+![Shot-1](./screencapture-localhost-56963-2022-07-14-13_11_34.png)
