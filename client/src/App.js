@@ -8,18 +8,17 @@ import UserProfile from "./components/UserProfile";
 
 import About from "./components/common/About";
 import ShopWine from "./components/Shopping/ShopWine";
+import WineShow from './components/Wine'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/profile/:id/edit"></Route>
-        <Route path="/wines/:id">
-          {/* <WineShow /> */}
+        <Route path="/wines/:id" element={<WineShow/>}>
         </Route>
         <Route path="/profile/:id"></Route>
-        <Route path="/wines">
-          {/* <WineShow /> */}
+        <Route path="/wines" element={<WineShow/>}>
         </Route>
         <Route exact path='/register' element={<Register/>}/>
         <Route exact path='/login' element={<Login />}/>
