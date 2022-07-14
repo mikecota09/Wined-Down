@@ -78,7 +78,7 @@ const Home = () => {
                       </Button>
                     </Modal.Footer>
                   </Modal>
-                  <Link to="/drinks">
+                  <Link to="/api/shopped-drinks">
                     <Button variant="warning">
                       <span>Shop Wines</span>
                     </Button>{" "}

@@ -77,7 +77,7 @@ const TastingRoom = () => {
       <div className="tasting-room-wrapper">
         <Container className="sorting-row-wrapper">
           <Col className="shop-drinks">
-            <h3 className="shop-drinks-h3">Heiss Room</h3>
+            <h3 className="shop-drinks-h3">Tasting Room</h3>
           </Col>
           <Col xs={7} className="sorting-buttons">
             <button

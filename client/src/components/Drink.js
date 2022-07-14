@@ -70,7 +70,7 @@ const DrinkShow = () => {
 
       <Breadcrumb className="show-drink-breadcrumb">
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/drinks">Browse Drinks</Breadcrumb.Item>
+        <Breadcrumb.Item href="/drinks">Browse Wines</Breadcrumb.Item>
         <Breadcrumb.Item active>{drink.drink}</Breadcrumb.Item>
       </Breadcrumb>
 
@@ -96,7 +96,7 @@ const DrinkShow = () => {
                     {drink.avgRating}
                   </p>
                   <p className="averageRating">
-                    <span>Price: £</span>
+                    <span>Price: $</span>
                     {drink.price}
                   </p>
                   <p className="averageRating">

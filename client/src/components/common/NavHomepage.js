@@ -64,7 +64,7 @@ const NavHompage = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="/heiss-room"
+                to="/tasting-room"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

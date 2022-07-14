@@ -4,8 +4,6 @@ import Drink from "./models/drink.js";
 import { dbURI, port } from "./config/environment.js";
 import router from "./config/router.js";
 import path from "path";
-import connectToDb from "./lib/connectToDb.js";
-import { connect } from "http2";
 
 const app = express();
 const __dirname = path.resolve();
